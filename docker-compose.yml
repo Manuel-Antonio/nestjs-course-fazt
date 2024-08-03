@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres
+    container_name: box_postgres
+    environment:
+      POSTGRES_DB: nestdb
+      POSTGRES_USER: magtanio
+      POSTGRES_PASSWORD: sqlmag
+    ports:
+      - 5499:5432
